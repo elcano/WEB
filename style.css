@@ -65,6 +65,21 @@ p {
     }
 }
 
+.navbar-logo img {
+    background-color: #FFFFFF;
+    height: 2.5em;
+    padding: 2em 0.25em; 
+    width: auto;
+    display: block;
+    margin-left: -1.5em;
+    margin-top: 0em;
+    margin-right: auto;
+}
+
+.navbar-links {
+    margin-left: auto;
+}
+
 .hover-underline {
     display: inline-block;
     position: relative;
