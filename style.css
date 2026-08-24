@@ -114,3 +114,7 @@ p {
     transform: scaleX(1);
     transform-origin: bottom center;
 }
+
+iframe {
+    border: .2em solid #000000;
+}
