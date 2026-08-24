@@ -1,1 +1,89 @@
+html {
+    overflow-x: hidden;
+}
 
+body {
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+}
+
+.content {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-top: 7em;
+    padding: 2em;
+}
+
+.max-width-container {
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.navbar {
+    background-color: #3D99DC;
+    margin: 0em;
+    padding: 0.5em;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    height: 4.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.navbar a {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.7em;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar a {
+        margin: 1em 0em;
+    }
+}
+
+.hover-underline {
+    display: inline-block;
+    position: relative;
+}
+  
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.15em;
+    bottom: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
