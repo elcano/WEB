@@ -191,3 +191,140 @@ iframe {
         width: 90%;
     }
 }
+
+.centered {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.sideBySide {
+    /*max-width: 90%;*/
+    height: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sideBySide img {
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.sideBySideElementImage {
+    width: 35%;
+    padding: 15px;
+    height: auto;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sideBySideElementText {
+    width: 65%;
+    padding: 50px;
+    height: auto;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+}
+
+.sideBySideElementText h1 {
+    color: #3D99DC;
+}
+
+.sideBySideElementText p {
+    color: #000000;
+}
+
+@media screen and (max-width: 1000px) {
+    .sideBySide {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .sideBySideElementText, .sideBySideElementImage {
+        padding: 0px;
+        width: 90%;
+    }
+
+    .sideBySideElementImage {
+        max-width: 500px;
+    }
+  
+    .sideBySideElement img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .reverseColorSectionText {
+        width: 90%;
+    }
+}
+
+.reverseColorSection {
+    background-color: #64BB55;
+    margin: 20px 0px;
+    padding: 10px;
+}
+
+.reverseColorSection p {
+    color: #FFFFFF;
+}
+
+.reverseColorSection h1 {
+    color: #FFFFFF;
+}
+
+.reverseColorSectionText {
+    color: #FFFFFF;
+    padding: 20px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+@media screen and (max-width: 1000px) {
+    .reverseColorSection {
+        margin: 20px 0px;
+        padding: 20px 0px;
+    }
+
+    .reverseColorSectionText {
+        width: 80%;
+        margin: 20px;
+
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+}
+
+.reverseColorSectionLink {
+    color: #FFFFFF;
+    background-color: #000000;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    padding: 10px 20px;
+    float: right;
+    margin: 0px;
+}
+
+.reverseColorSectionLink:hover {
+    opacity: 75%;
+}
