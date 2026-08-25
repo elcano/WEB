@@ -162,6 +162,22 @@ iframe {
     margin-top: -1em;
 }
 
+.overlay a {
+    margin-top: 10em;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2em;
+    padding: 0.4em;
+    background-color: #64BB55;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 10em;
+    text-align: right;
+}
+
+.overlay a:active {
+    background-color: #6EC060;
+}
+
 @media screen and (max-width: 1000px) {
     .overlay h1 {
         font-size: 7em;
