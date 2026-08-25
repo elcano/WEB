@@ -1,6 +1,6 @@
 /*Adjust Navbar Depending on Screen Size*/
 function adjustNavBar() {
-    var x = document.getElementById("globalNavbar");
+    var x = document.getElementById("global-navbar");
     if (x.className === "navbar") {
         x.className += " responsive";
     } else {
