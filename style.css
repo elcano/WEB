@@ -28,6 +28,10 @@ p {
     padding: 2em;
 }
 
+.content-no-margin {
+    margin-top: 0em;
+}
+
 .max-width-container {
     max-width: 1500px;
     margin-right: auto;
@@ -48,6 +52,7 @@ p {
     justify-content: center;
     align-items: center;
     z-index: 1;
+    margin-bottom: 7em;
 }
 
 .navbar a {
@@ -165,7 +170,7 @@ iframe {
 .overlay a {
     margin-top: 10em;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 2em;
+    font-size: 1.7em;
     padding: 0.4em;
     background-color: #64BB55;
     color: #000000;
@@ -199,12 +204,11 @@ iframe {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
 }
 
-.sideBySide {
-    /*max-width: 90%;*/
+.side-by-side {
     height: auto;
     display: inline-flex;
     justify-content: center;
@@ -213,7 +217,7 @@ iframe {
     margin-left: auto;
 }
 
-.sideBySide img {
+.side-by-side img {
     height: auto;
     width: 100%;
     margin-left: auto;
@@ -221,18 +225,18 @@ iframe {
     display: block;
 }
 
-.sideBySideElementImage {
+.side-by-side-element-image {
     width: 35%;
-    padding: 15px;
+    padding: 0.9em;
     height: auto;
     align-items: center;
     margin-right: auto;
     margin-left: auto;
 }
 
-.sideBySideElementText {
+.side-by-side-element-text {
     width: 65%;
-    padding: 50px;
+    padding: 3.125em;
     height: auto;
     align-items: center;
     margin-right: auto;
@@ -240,91 +244,91 @@ iframe {
     text-align: left;
 }
 
-.sideBySideElementText h1 {
+.side-by-side-element-text h1 {
     color: #3D99DC;
 }
 
-.sideBySideElementText p {
+.side-by-side-element-text p {
     color: #000000;
 }
 
-@media screen and (max-width: 1000px) {
-    .sideBySide {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .sideBySideElementText, .sideBySideElementImage {
-        padding: 0px;
-        width: 90%;
-    }
-
-    .sideBySideElementImage {
-        max-width: 500px;
-    }
-  
-    .sideBySideElement img {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .reverseColorSectionText {
-        width: 90%;
-    }
-}
-
-.reverseColorSection {
+.reverse-color-section {
     background-color: #64BB55;
-    margin: 20px 0px;
+    margin: 1.25em 0em;
     padding: 10px;
 }
 
-.reverseColorSection p {
+.reverse-color-section p {
     color: #FFFFFF;
 }
 
-.reverseColorSection h1 {
+.reverse-color-section h1 {
     color: #FFFFFF;
 }
 
-.reverseColorSectionText {
+.reverse-color-section-text {
     color: #FFFFFF;
-    padding: 20px;
+    padding: 1.25em;
     width: 60%;
     margin-right: auto;
     margin-left: auto;
     display: block;
 }
 
-@media screen and (max-width: 1000px) {
-    .reverseColorSection {
-        margin: 20px 0px;
-        padding: 20px 0px;
-    }
-
-    .reverseColorSectionText {
-        width: 80%;
-        margin: 20px;
-
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
-    }
-}
-
-.reverseColorSectionLink {
+.reverse-color-section-link {
     color: #FFFFFF;
     background-color: #000000;
     text-align: center;
     text-decoration: none;
     font-family: "Bebas Neue", sans-serif;
-    padding: 10px 20px;
+    padding: 0.625em 1.25em;
     float: right;
     margin: 0px;
 }
 
-.reverseColorSectionLink:hover {
+.reverse-color-section-link:hover {
     opacity: 75%;
+}
+
+@media screen and (max-width: 1000px) {
+    .side-by-side {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .side-by-side-element-text, .side-by-side-element-image {
+        padding: 0px;
+        width: 90%;
+    }
+
+    .side-by-side-element-image {
+        max-width: 31.25em;
+    }
+  
+    .side-by-side-element img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .reverse-color-section-text {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .reverse-color-section {
+        margin: 1.25em 0em;
+        padding: 1.25em 0em;
+    }
+
+    .reverse-color-section-text {
+        width: 80%;
+        margin: 1.25em;
+
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
 }
