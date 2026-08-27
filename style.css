@@ -39,6 +39,19 @@ p {
     display: block;
 }
 
+.max-width-text {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+@media screen and (max-width: 900px) {
+    .max-width-text {
+        max-width: 100%
+    }
+}
+
 .navbar {
     background-color: #3D99DC;
     margin: 0em;
@@ -339,7 +352,7 @@ iframe {
     padding: 1.25em 0em;
     text-align: center;
     bottom: 0;
-    margin-top: 2em;
+    margin-top: 1em;
     background-color: #3D99DC;
 }
 
@@ -410,4 +423,10 @@ iframe {
 
 .scroll-div p {
   text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: 5%;
+  margin-left: 5%;
+  font-weight: 500;
+  color: #FFFFFF;
 }
