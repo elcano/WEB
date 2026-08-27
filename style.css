@@ -17,6 +17,16 @@ img {
     -ms-user-drag: none;     /*Internet Explorer/Edge*/
 }
 
+::selection {
+  background-color: #6EC060;
+  color: #FFFFFF;
+}
+
+::-moz-selection {
+  background-color: #6EC060;
+  color: #FFFFFF;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Bebas Neue", sans-serif;
 }
@@ -427,27 +437,27 @@ iframe {
 }
 
 .scroll-div {
-  background-color: #64BB55;
-  max-height: 31.25em;
-  overflow-y: auto;
+    background-color: #64BB55;
+    max-height: 31.25em;
+    overflow-y: auto;
 }
 
 .scroll-div img {
-  width: 45%;
-  height: auto;
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
+    width: 45%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
 }
 
 .scroll-div p {
-  text-align: center;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-right: 5%;
-  margin-left: 5%;
-  font-weight: 500;
-  color: #FFFFFF;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-weight: 500;
+    color: #FFFFFF;
 }
 
 .gallery-container {
