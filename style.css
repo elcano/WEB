@@ -332,3 +332,54 @@ iframe {
         display: block;
     }
 }
+
+.side-by-side-scroll {
+  margin-right: 3%;
+  margin-left: 3%;
+  width: 90%;
+  height: auto;
+  display: inline-flex;
+  padding: 1.25em;
+  justify-content: center;
+  /*margin-top: -.05em;*/
+  align-items: center;
+}
+
+.side-by-side-scroll-element {
+  width: 45%;
+  height: auto;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 850px) {
+  .side-by-side-scroll {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .side-by-side-scroll-element {
+    width: 100%;
+    margin-left: -2%;
+  }
+}
+
+.scroll-div {
+  background-color: #64BB55;
+  max-height: 31.25em;
+  overflow-y: auto;
+}
+
+.scroll-div img {
+  width: 45%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.scroll-div p {
+  text-align: center;
+}
