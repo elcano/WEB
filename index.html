@@ -81,6 +81,33 @@
                     <li><a href="http://www.uwb.edu/news/october-2016/self-driving-bicycles" target="_blank">University of Washington Bothell</a></li>
                     <li><a href="http://www.uwb.edu/news/october-2016/self-driving-bicycles" target="_blank">Amazon</a></li>
                 </ul>
+
+                <br>
+                <br>
+                <br>
+
+                <h1>Intro</h1>
+                <h2>Elcano DIY Robot Kit</h2>
+                <p>The Elcano Project is developing low-cost hardware and software kits to convert any vehicle to self-drive. We are concentrating on recumbent tricycles, which produce a real people mover at a total cost of under $10,000. Our kits could also be used in full-sized cars or toy RC cars. We have done some work with 1/10 scale cars.</p>
+                <br>
+                <p>The kits are based on Arduino and Jetson Nano microcontrollers, and allow you to connect them robustly into a compact, low power package. The system uses the industry standard CAN bus, allowing for integration with commercial equipment. All computing is done on the vehicle with no dependence on the cloud. The open source software can run on many other platforms. The package uses several processors.</p>
+                <br>
+                <p>Rubber meets the road in the Drive-by-Wire (DBW) system, including C++ software, the 5th generation circuit board, actuators and sensors. The job of DBW is to send directional commands to the motor, brakes and steering system. There are three sources of directional commands:</p>
+                <ol>
+                    <li>Radio Control unit</li>
+                    <li>Operator joystick</li>
+                    <li>Autonomous control from Jetson Nano</li>
+                </ol>
+                <br>
+                <p>The target is autonomous operation, but the system comes up in manual mode. Either Radio Control or a rider must be present to activate emergency stop if needed. A data logger is incorporated into DBW, allowing analysis of commands to the system and resulting behavior.</p>
+                <br>
+                <p>The Jetson Nano works with a Pixhawk to set a course of GPS waypoints and direct the vehicle over that route. The Pixhawk was originally designed to provide GPS location to a drone and rely on a wireless ground station to direct it. In our implementation, the Jetson Nano is a wired ground station and runs Linux code to direct the vehicle.</p>
+                <br>
+                <p>Students have experimented with sonar, cameras and hobbyist lidar to detect obstacles. This data can be handled by the Jetson Nano or by another dedicated processor that extracts obstacle location and puts it on the CAN bus. We have not made obstacle detection a priority since we expect affordable systems to become available from others.</p>
+                <br>
+                <p>It takes considerable effort to convert an e-trike to self drive. For those who prefer to concentrate on the software, we have a simulator circuit board available. Unlike other simulators, ours uses the same software and microcontrollers that drive the vehicle. The simulator was originally designed to interface to CARLA, but the difficulty of that system led us to use a simpler in-house designed simulator. Thus one can improve the open-source software, test on the simulator and then have it run on a real vehicle.</p>
+                <br>
+                <p>Unlike some other approaches to self-drive, we do not depend on the Cloud, Machine Learning or an Operating System. Our architecture gives a secure, deterministic core that cannot be hacked remotely. Software components are small enough to allow mathematically proving that they meet their specification.</p>
             </div>
         </div>
 
