@@ -344,6 +344,10 @@ iframe {
     margin: 0px;
 }
 
+.reverse-color-section a {
+    color: #FFFFFF;
+}
+
 .reverse-color-section-link:hover {
     opacity: 75%;
 }
