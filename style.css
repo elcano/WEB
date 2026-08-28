@@ -35,8 +35,8 @@ p {
     font-family: "Inter", sans-serif;
 }
 
-ul {
-    margin-left: 1.25em;
+ul, ol {
+    margin-left: 1.5em;
 }
 
 li {
