@@ -35,6 +35,22 @@ p {
     font-family: "Inter", sans-serif;
 }
 
+ul, ol {
+    margin-left: 1.5em;
+}
+
+li {
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    color: #64BB55;
+}
+
+a:visited {
+    color: #64BB55;
+}
+
 .content {
     width: 90%;
     margin-right: auto;
