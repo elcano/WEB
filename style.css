@@ -611,3 +611,25 @@ iframe {
     height: auto;
   }
 }
+
+.home-page-gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+
+.home-page-gallery-image {
+    margin: 1.25em 0.625em;
+    height: 12.5em;
+    width: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .home-page-gallery-image {
+    margin: 1.25em 0.625em;
+    height: 9.375em;
+    width: auto;
+  }
+}
