@@ -29,6 +29,7 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Bebas Neue", sans-serif;
+    color: #3D99DC;
 }
 
 p {
@@ -78,7 +79,7 @@ a:visited {
     display: block;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .max-width-text {
         max-width: 100%
     }
@@ -262,14 +263,13 @@ iframe {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
 }
 
 .side-by-side {
     height: auto;
+    width: 80%;
     display: inline-flex;
-    justify-content: center;
+    justify-content: flex-between;
     align-items: center;
     margin-right: auto;
     margin-left: auto;
@@ -285,7 +285,6 @@ iframe {
 
 .side-by-side-element-image {
     width: 35%;
-    padding: 0.9em;
     height: auto;
     align-items: center;
     margin-right: auto;
@@ -294,12 +293,21 @@ iframe {
 
 .side-by-side-element-text {
     width: 65%;
-    padding: 3.125em;
     height: auto;
     align-items: center;
     margin-right: auto;
     margin-left: auto;
     text-align: left;
+}
+
+.left-image, .left-text {
+    padding: 0em;
+    padding-right: 4em;
+}
+
+.right-text, .right-text {
+    padding: 0em;
+    padding-left: 4em;
 }
 
 .side-by-side-element-text h1 {
@@ -357,21 +365,27 @@ iframe {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        width: 100%;
+        margin: 0em;
+        padding: 0em;
     }
 
     .side-by-side-element-text, .side-by-side-element-image {
-        padding: 0px;
+        padding: 0em;
+        margin: 0em;
         width: 90%;
-    }
-
-    .side-by-side-element-image {
-        max-width: 31.25em;
     }
   
     .side-by-side-element img {
         display: block;
         margin-right: auto;
         margin-left: auto;
+        width: 100%;
+    }
+
+    .right-text, .right-text, .left-image, .left-text {
+        padding: 0em;
+        width: 100%;
     }
 
     .reverse-color-section-text {
