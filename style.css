@@ -260,7 +260,13 @@ iframe {
     .wiki {
         width: 100%;
         padding: 0em;
+        padding-top: 2em;
         margin-bottom: -0.75em;
+    }
+
+    .wiki-link {
+        padding-top: 0em;
+        padding-bottom: 2em;
     }
 }
 
@@ -334,6 +340,29 @@ iframe {
     .overlay {
         width: 90%;
     }
+}
+
+.wiki-link {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: -15em;
+}
+
+.wiki-link a {
+    margin-top: 10em;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.7em;
+    padding: 0.4em;
+    background-color: #64BB55;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 10em;
+    text-align: right;
+}
+
+.wiki-link a:active {
+    background-color: #6EC060;
 }
 
 .centered {
@@ -700,3 +729,4 @@ iframe {
 .link-box button:active {
     scale: 0.95;
 }
+
