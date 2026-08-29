@@ -157,7 +157,7 @@ a:visited {
     padding-bottom: 0.7em;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1150px) {
     .navbar {
         display: block;
         margin-bottom: -7em;
