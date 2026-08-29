@@ -636,3 +636,54 @@ iframe {
     width: auto;
   }
 }
+
+.link-box {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    align-items: center;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.link-box button {
+    margin: 0.5em 0.75em;
+    background-color: #64BB55;
+    font-family: "Bebas Neue", sans-serif;
+    color: #000000;
+    font-size: 1em;
+    border: none;
+    padding: 0.5em;
+    overflow: auto;
+}
+
+.link-box a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .link-box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .link-box button {
+        margin: 1em;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+}
+
+.link-box button:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.link-box button:active {
+    scale: 0.95;
+}
