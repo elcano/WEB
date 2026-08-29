@@ -312,20 +312,36 @@ iframe {
     margin-top: -1em;
 }
 
-.overlay a {
-    margin-top: 10em;
-    font-family: "Bebas Neue", sans-serif;
+.overlay-link {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.overlay-link a {
     font-size: 1.7em;
-    padding: 0.4em;
-    background-color: #64BB55;
-    color: #000000;
     text-decoration: none;
-    margin-top: 10em;
     text-align: right;
 }
 
-.overlay a:active {
-    background-color: #6EC060;
+.overlay-link button {
+    margin: 0.5em 0.75em;
+    background-color: #64BB55;
+    font-family: "Bebas Neue", sans-serif;
+    color: #000000;
+    font-size: 1.7em;
+    border: none;
+    padding: 0.5em;
+    overflow: auto;
+}
+
+.overlay-link button:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.overlay-link button:active {
+    scale: 0.95;
 }
 
 @media screen and (max-width: 1000px) {
@@ -351,18 +367,29 @@ iframe {
 
 .wiki-link a {
     margin-top: 10em;
-    font-family: "Bebas Neue", sans-serif;
     font-size: 1.7em;
-    padding: 0.4em;
-    background-color: #64BB55;
-    color: #000000;
     text-decoration: none;
-    margin-top: 10em;
     text-align: right;
 }
 
-.wiki-link a:active {
-    background-color: #6EC060;
+.wiki-link button {
+    margin: 0.5em 0.75em;
+    background-color: #64BB55;
+    font-family: "Bebas Neue", sans-serif;
+    color: #000000;
+    font-size: 1em;
+    border: none;
+    padding: 0.5em;
+    overflow: auto;
+}
+
+.wiki-link button:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.wiki-link button:active {
+    scale: 0.95;
 }
 
 .centered {
@@ -451,22 +478,32 @@ iframe {
 }
 
 .reverse-color-section-link {
-    color: #FFFFFF;
-    background-color: #000000;
-    text-align: center;
-    text-decoration: none;
-    font-family: "Bebas Neue", sans-serif;
-    padding: 0.625em 1.25em;
     float: right;
     margin: 0px;
 }
 
-.reverse-color-section a {
+.reverse-color-section-link button {
+    margin: 0.5em 0.75em;
+    background-color: #000000;
+    font-family: "Bebas Neue", sans-serif;
     color: #FFFFFF;
+    font-size: 1em;
+    border: none;
+    padding: 0.5em;
+    overflow: auto;
 }
 
-.reverse-color-section-link:hover {
-    opacity: 75%;
+.reverse-color-section-link a {
+    text-decoration: none;
+}
+
+.reverse-color-section-link button:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.reverse-color-section-link button:active {
+    scale: 0.95;
 }
 
 @media screen and (max-width: 1000px) {
@@ -684,7 +721,7 @@ iframe {
     margin-top: 1em;
     margin-bottom: 1em;
     align-items: center;
-    width: 75%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     display: block;
@@ -729,4 +766,3 @@ iframe {
 .link-box button:active {
     scale: 0.95;
 }
-
