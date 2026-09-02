@@ -767,14 +767,26 @@ iframe {
     scale: 0.95;
 }
 
+.video-gallery-container {
+    display: flex;
+}
+
+@media screen and (max-width: 1150px) {
+    .video-gallery-container {
+        display: block;
+    }
+}
+
 .youtube-video-container {
     width: 100%;
     max-width: 30em;
     margin: 0 auto;
+    padding: 1em;
 }
 
 .youtube-video-container iframe {
     width: 100%;
+    height: auto;
     height: auto;
     aspect-ratio: 16 / 9;
     border: none;
