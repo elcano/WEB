@@ -766,3 +766,16 @@ iframe {
 .link-box button:active {
     scale: 0.95;
 }
+
+.youtube-video-container {
+    width: 100%;
+    max-width: 30em;
+    margin: 0 auto;
+}
+
+.youtube-video-container iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: none;
+}
