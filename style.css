@@ -81,15 +81,22 @@ a:visited {
 }
 
 .max-width-text {
-    max-width: 80%;
+    width: 80%;
+    max-width: 1500px;
     margin-right: auto;
     margin-left: auto;
     display: block;
 }
 
 @media screen and (max-width: 1000px) {
+    .content {
+        padding: 0em;
+        padding: 1em;
+        width: 85%;
+    }
+
     .max-width-text {
-        max-width: 100%
+        width: 100%;
     }
 }
 
@@ -787,6 +794,7 @@ iframe {
 
     .youtube-video-container {
         max-width: 25em;
+        max-width: 90%;
     }
 }
 
