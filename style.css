@@ -783,7 +783,8 @@ iframe {
 
 .youtube-video-container {
     width: 100%;
-    max-width: 30em;
+    /*max-width: 30em;*/
+    max-width: 25em;
     margin: 0 auto;
     padding: 1em;
 }
