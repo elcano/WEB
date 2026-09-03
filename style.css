@@ -289,8 +289,8 @@ iframe {
     margin-bottom: -5em;
 }
 
-.header img {
-    opacity: 0.3;
+.header video {
+    opacity: 0.5;
     width: 100%;
     height: 100%;
     object-fit: cover;
