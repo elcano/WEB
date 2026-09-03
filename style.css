@@ -454,10 +454,6 @@ iframe {
     color: #000000;
 }
 
-/* .between-side-by-side p {
-    text-align: left;
-} */
-
 .reverse-color-section {
     background-color: #64BB55;
     margin: 1.25em 0em;
@@ -775,16 +771,18 @@ iframe {
     display: flex;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 900px) {
     .video-gallery-container {
         display: block;
+    }
+
+    .youtube-video-container {
+        max-width: 25em;
     }
 }
 
 .youtube-video-container {
     width: 100%;
-    /*max-width: 30em;*/
-    max-width: 25em;
     margin: 0 auto;
     padding: 1em;
 }
