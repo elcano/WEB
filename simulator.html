@@ -57,7 +57,18 @@
                 <div class="side-by-side-scroll">
                     <div class="side-by-side-scroll-element">
                         <h1>Simulator</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+                        <p>In 2019-2021 we made a major effort to develop an interface to a simulator. We targeted the sophisticated CARLA simulator for automated vehicles. We built a bridge PCB hosting three Arduino Dues:</p>
+                        <ol>
+                            <li>An Arduino Due with standard code for DBW plugs into one of the slots.</li>
+                            <li>An Arduino Due for localization (since replaced by Jetson Nano and Pixhawk) plugs into another slot.</li>
+                            <li>The third slot is a router. It feeds the output of the other two microprocessors into a simulator on a PC and sends the sensor output to the Dues.</li>
+                        </ol>
+                        <br>
+                        <p>The simulator enables people to contribute to the software without having the trike hardware. Unfortunately, we found that the interface to CARLA is difficult to master and the simulator requires an unusually powerful computer. It is on <a href="https://github.com/elcano/Simulator">https://github.com/elcano/Simulator</a>. The simulator was dropped for several years.</p>
+                        <br>
+                        <p>In 2026 we brought back the simulator board, but made the router into a simple simulator. Tell it how much throttle is applied and it tells you how fast the trike is going. Give it a steering command and it tells you where the trike winds up. The router can use its USB connection to a PC to display simple 2D graphics. The simplified simulator is on <a href="https://github.com/elcano/Bridge">https://github.com/elcano/Bridge</a>.</p>
+                        <br>
+                        <p>We no longer use Arduino for localization, but the bridge board has a CAN connection that can go to the Jetson Nano.</p>
                     </div>
 
                     <br>
