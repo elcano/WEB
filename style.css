@@ -680,11 +680,13 @@ iframe {
 }
 
 .gallery-image-overlay {
+    /*position: absolute;*/
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 98.5%;
+    /*height: 98.5%;*/
+    height: auto;
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 0;
     transition: opacity 0.3s ease;
