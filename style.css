@@ -52,12 +52,12 @@ a:visited {
     color: #64BB55;
 }
 
-.white-link {
-    color: #FFFFFF;
+.black-link {
+    color: #000000;
 }
 
 .white-link:visited {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .content {
