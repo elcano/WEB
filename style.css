@@ -454,6 +454,10 @@ iframe {
     color: #000000;
 }
 
+/* .between-side-by-side p {
+    text-align: left;
+} */
+
 .reverse-color-section {
     background-color: #64BB55;
     margin: 1.25em 0em;

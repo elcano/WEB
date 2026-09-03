@@ -52,38 +52,48 @@
             </div>
         </div>
 
-         <div class="content">
+        <div class="content">
             <div class="max-width-container">                
                 <div class="centered">
                     <div class="side-by-side">
                         <div class="side-by-side-element-text left-text">
-                            <h1>Waypoint to Waypoint</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+                            <h1>Current Work</h1>
+                            <p>We have redesigned the software and electronic layout for the trikes. The wiring in the drive-by-wire version 4 system had gotten messy and unreliable. The old system was on <a href="https://github.com/elcano/Drive-by-wire-version-1-4">https://github.com/elcano/Drive-by-wire-version-1-4</a> It got even messier when we tried to add Jetson Nano and Pixhawk. DBW had jumper wires connecting to the SD card, RC receiver and real-time clock. There were too many voltage converters in the box. The connectors for steering and throttle did not have readily available mating cables. Steering has been a problem since the expensive linear servo often fails. A cheaper linear actuator is robust and students spent two years building an H-bridge circuit that could use the more reliable actuator, but the H-bridge never quite worked. We then discovered that the Arduino motor control shield can drive the actuator when it has an external 12-V supply.</p>
                         </div>
 
-                        <br>
                         <br>
 
                         <div class="side-by-side-element-image">
                             <img class="right-image" src="assets/placeholder.jpg" alt="">
                         </div>
                     </div>
+                </div>
 
-                    <br>
-                    <br>
-                    <br>
+                <br>
 
+                <div class="max-width, max-width-text">
+                    <p>The version 5 PCB has been redesigned so that the SD, real-time clock and RC receiver plug into the board. The steering and throttle connectors have been replaced by RJ-45 connectors and we have added a third connector for an operator joystick, enabling a driver. The two trikes now have identical systems. The electronics are packaged into three boxes:</p>
+                    <ol>
+                        <li>A box near the batteries sends 36V power to the e-bike controller and passes 24V on to DBW.</li>
+                        <li>The Drive-by-wire box converts the 24V to 12V. The brake relays use both 12 and 24V. The 12V goes to steering and the DBW board, where the Arduino Due converts it to 3, 3V.</li>
+                        <li>A new box houses the Jetson Nano, Pixhawk and CAN distribution. A buck converter changes the 12V to 5V for the microprocessors.</li>
+                    </ol>
+                </div>
+
+                <br>
+
+                <div class="centered">
                     <div class="side-by-side">
                         <div class="side-by-side-element-image">
                             <img class="left-image" src="assets/placeholder.jpg" alt="">
                         </div>
 
                         <br>
-                        <br>
 
                         <div class="side-by-side-element-text right-text">
-                            <h1>Drive-by-Wire</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+                            <p>Software had gotten equally messy. Backward compatibility was eliminated, Major sections were rewritten and reorganized. The new system is on <a href="https://github.com/elcano/V5_Drive-by-wire">https://github.com/elcano/V5_Drive-by-wire</a> with code for the Jetson Nano on <a href="https://github.com/elcano/JetHawk">https://github.com/elcano/JetHawk</a>.</p>
+                            <br>
+                            <p>Future work will demonstrate two trikes coupling while in motion, driving together and then separating. Students have developed the couple (<a href="https://github.com/elcano/Docking">https://github.com/elcano/Docking</a>) and a sensor that measures the distance between vehicles (<a href="https://github.com/elcano/Docking">https://github.com/elcano/Docking</a>) More information is on the Docking tab.</p>
                         </div>
                     </div>
                 </div>
