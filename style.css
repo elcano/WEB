@@ -813,3 +813,8 @@ iframe {
     aspect-ratio: 16 / 9;
     border: none;
 }
+
+.docking-video {
+    width: 30em;
+    height: auto;
+}
