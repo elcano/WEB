@@ -601,7 +601,8 @@ iframe {
 
 .scroll-div {
     background-color: #64BB55;
-    max-height: 31.25em;
+    /*max-height: 31.25em;*/
+    max-height: 33em;
     overflow-y: auto;
 }
 
@@ -640,6 +641,7 @@ iframe {
 
   .scroll-div-right, .scroll-div-left {
     margin: 0em;
+    max-height: none;
   }
 }
 
