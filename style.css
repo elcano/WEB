@@ -91,6 +91,8 @@ a:visited {
 @media screen and (max-width: 1000px) {
     .content {
         padding: 0em;
+        padding: 1em;
+        width: 85%;
     }
 
     .max-width-text {
@@ -792,6 +794,7 @@ iframe {
 
     .youtube-video-container {
         max-width: 25em;
+        max-width: 90%;
     }
 }
 
