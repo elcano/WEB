@@ -29,88 +29,94 @@
     </head>
 
     <body>
-        <div class="navbar" id="global-navbar">
-            <a class="navbar-logo" href="index.html">
-                <img draggable="false" src="assets/elcano-logo.png" alt="Elcano Project logo.">
-            </a>
-
-            <div class="navbar-gradient">
-            </div>
-
-            <div class="navbar-links">
-                <a class="hover-underline" href="index.html">Home</a>
-                <a class="hover-underline" href="about.html">About</a>
-                <a class="hover-underline" href="current-work.html">Current Work</a>
-                <a class="hover-underline" href="docking.html">Docking</a>
-                <a class="hover-underline" href="simulator.html">Simulator</a>
-                <a class="hover-underline" href="media.html">Media</a>
-                <a class="hover-underline" href="links.html">Links</a>
-                <a class="hover-underline" href="wiki.html">Wiki</a>
-                <a href="javascript:void(0);" class="icon" onclick="adjustNavBar()">
-                    <i class="fa fa-bars"></i>
+        <div class="max-width-container">
+            <div class="navbar max-width-container" id="global-navbar">
+                <a class="navbar-logo" href="index.html">
+                    <img draggable="false" src="assets/elcano-logo.png" alt="Elcano Project logo.">
                 </a>
+
+                <div class="navbar-gradient">
+                </div>
+
+                <div class="navbar-links">
+                    <a class="hover-underline" href="index.html">Home</a>
+                    <a class="hover-underline" href="about.html">About</a>
+                    <a class="hover-underline" href="current-work.html">Current Work</a>
+                    <a class="hover-underline" href="docking.html">Docking</a>
+                    <a class="hover-underline" href="simulator.html">Simulator</a>
+                    <a class="hover-underline" href="media.html">Media</a>
+                    <a class="hover-underline" href="links.html">Links</a>
+                    <a class="hover-underline" href="wiki.html">Wiki</a>
+                    <a href="javascript:void(0);" class="icon" onclick="adjustNavBar()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
             </div>
         </div>
 
         <div class="content">
-            <div class="max-width-container max-width-text"> 
-                <div class="side-by-side-scroll">
-                    <div class="side-by-side-scroll-element">
-                        <h1>Simulator</h1>
-                        <p>In 2019-2021 we made a major effort to develop an interface to a simulator. We targeted the sophisticated CARLA simulator for automated vehicles. We built a bridge PCB hosting three Arduino Dues:</p>
-                        <ol>
-                            <li>An Arduino Due with standard code for DBW plugs into one of the slots.</li>
-                            <li>An Arduino Due for localization (since replaced by Jetson Nano and Pixhawk) plugs into another slot.</li>
-                            <li>The third slot is a router. It feeds the output of the other two microprocessors into a simulator on a PC and sends the sensor output to the Dues.</li>
-                        </ol>
-                        <br>
-                        <p>The simulator enables people to contribute to the software without having the trike hardware. Unfortunately, we found that the interface to CARLA is difficult to master and the simulator requires an unusually powerful computer. It is on <a href="https://github.com/elcano/Simulator">https://github.com/elcano/Simulator</a>. The simulator was dropped for several years.</p>
-                        <br>
-                        <p>In 2026 we brought back the simulator board, but made the router into a simple simulator. Tell it how much throttle is applied and it tells you how fast the trike is going. Give it a steering command and it tells you where the trike winds up. The router can use its USB connection to a PC to display simple 2D graphics. The simplified simulator is on <a href="https://github.com/elcano/Bridge">https://github.com/elcano/Bridge</a>.</p>
-                        <br>
-                        <p>We no longer use Arduino for localization, but the bridge board has a CAN connection that can go to the Jetson Nano.</p>
-                    </div>
+            <div class="max-width-container">
+                <div class="max-width-text"> 
+                    <div class="side-by-side-scroll">
+                        <div class="side-by-side-scroll-element">
+                            <h1>Simulator</h1>
+                            <p>In 2019-2021 we made a major effort to develop an interface to a simulator. We targeted the sophisticated CARLA simulator for automated vehicles. We built a bridge PCB hosting three Arduino Dues:</p>
+                            <ol>
+                                <li>An Arduino Due with standard code for DBW plugs into one of the slots.</li>
+                                <li>An Arduino Due for localization (since replaced by Jetson Nano and Pixhawk) plugs into another slot.</li>
+                                <li>The third slot is a router. It feeds the output of the other two microprocessors into a simulator on a PC and sends the sensor output to the Dues.</li>
+                            </ol>
+                            <br>
+                            <p>The simulator enables people to contribute to the software without having the trike hardware. Unfortunately, we found that the interface to CARLA is difficult to master and the simulator requires an unusually powerful computer. It is on <a href="https://github.com/elcano/Simulator">https://github.com/elcano/Simulator</a>. The simulator was dropped for several years.</p>
+                            <br>
+                            <p>In 2026 we brought back the simulator board, but made the router into a simple simulator. Tell it how much throttle is applied and it tells you how fast the trike is going. Give it a steering command and it tells you where the trike winds up. The router can use its USB connection to a PC to display simple 2D graphics. The simplified simulator is on <a href="https://github.com/elcano/Bridge">https://github.com/elcano/Bridge</a>.</p>
+                            <br>
+                            <p>We no longer use Arduino for localization, but the bridge board has a CAN connection that can go to the Jetson Nano.</p>
+                        </div>
 
-                    <br>
+                        <br>
 
-                    <div class="side-by-side-scroll-element scroll-div scroll-div-right">
-                        <br>
-                        <img src="assets/SideViewCrop.png" draggable="false" alt="">
-                        <p>Side View</p>
-                        <br>
-                        <img src="assets/OpenViewCrop.png" draggable="false" alt="">
-                        <p>Open View</p>
-                        <br>
-                        <img src="assets/Trike__001_Front3Q_Hero_View.jpg" draggable="false" alt="">
-                        <p>Hero View</p>
-                        <br>
-                        <img src="assets/TrikeChassis.png" draggable="false" alt="">
-                        <p>Trike Chassis</p>
-                        <br>
+                        <div class="side-by-side-scroll-element scroll-div scroll-div-right">
+                            <br>
+                            <img src="assets/SideViewCrop.png" draggable="false" alt="">
+                            <p>Side View</p>
+                            <br>
+                            <img src="assets/OpenViewCrop.png" draggable="false" alt="">
+                            <p>Open View</p>
+                            <br>
+                            <img src="assets/Trike__001_Front3Q_Hero_View.jpg" draggable="false" alt="">
+                            <p>Hero View</p>
+                            <br>
+                            <img src="assets/TrikeChassis.png" draggable="false" alt="">
+                            <p>Trike Chassis</p>
+                            <br>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="footer">
-            <p>
-                <a href="https://github.com/elcano/" target="_blank"><i class="fa fa-github"></i></a>
-                <a href="mailto:tfolsom@uw.edu" target="_blank"><i class="fa fa-envelope-o"></i></a>
-                <a href="https://www.youtube.com/@TylerFolsom-j7l/videos" target="_blank"><i class="fa fa-youtube"></i></a>
-            </p>
+        <div class="max-width-container">
+            <div class="footer">
+                <p>
+                    <a href="https://github.com/elcano/" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="mailto:tfolsom@uw.edu" target="_blank"><i class="fa fa-envelope-o"></i></a>
+                    <a href="https://www.youtube.com/@TylerFolsom-j7l/videos" target="_blank"><i class="fa fa-youtube"></i></a>
+                </p>
 
-            <br>
-            
-            <p>Tyler C. Folsom</p>
-            <p>Affiliate Professor</p>
-            <p>Division of Computing and Software Systems</p>
-            <p>School of Science Technology, Engineering and Mathematics</p>
-            <p>University of Washington Bothell</p>
-            <p>362 Discovery Hall, 18115 Campus Way NE, Bothell, WA 98011</p>
+                <br>
+                
+                <p>Tyler C. Folsom</p>
+                <p>Affiliate Professor</p>
+                <p>Division of Computing and Software Systems</p>
+                <p>School of Science Technology, Engineering and Mathematics</p>
+                <p>University of Washington Bothell</p>
+                <p>362 Discovery Hall, 18115 Campus Way NE, Bothell, WA 98011</p>
 
-            <br>
+                <br>
 
-            <p>&copy; <script>document.write(new Date().getFullYear())</script> Elcano Project</p>
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Elcano Project</p>
+            </div>
         </div>
     </body>
 </html>
