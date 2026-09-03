@@ -817,6 +817,7 @@ iframe {
 
 .docking-video {
     width: 30em;
+    max-width: 90%;
     height: auto;
 }
 
