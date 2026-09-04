@@ -492,6 +492,20 @@ iframe {
     display: block;
 }
 
+@media screen and (max-width: 1000px) {
+    .reverse-color-section {
+        margin: 0em;
+        padding: 0em;
+    }
+
+    .reverse-color-section-text {
+        width: 85%;
+        min-width: 85%;
+        padding: 0em;
+        margin: 0em;
+    }
+}
+
 .reverse-color-section-link {
     float: right;
     margin: 0px;
