@@ -597,6 +597,12 @@ iframe {
     color: #000000;
 }
 
+@media screen and (max-width: 600px) {
+  .footer p {
+    font-size: .8em;
+  }
+}
+
 .side-by-side-scroll {
   width: 100%;
   height: auto;
