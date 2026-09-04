@@ -598,8 +598,14 @@ iframe {
 }
 
 @media screen and (max-width: 600px) {
-  .footer p {
+  .footer-text {
     font-size: .8em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer-text {
+    font-size: .4em;
   }
 }
 
